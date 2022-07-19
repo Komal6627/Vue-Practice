@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Child name="Komal" />
+    <Child v-bind:name="userName" />
   </div>
 </template>
 
@@ -15,6 +15,9 @@ export default {
   components: {
     // HelloWorld
     Child
+  },
+  data(){
+    return { userName:"Komal Killedar"}
   }
 }
 </script>

@@ -6,6 +6,7 @@
 <script>
   export default{
      name:"Child",
-     props:['name']
+     props:['name'],
   }
+  
 </script>
