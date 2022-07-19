@@ -2,7 +2,8 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Child v-bind:name="userName" />
+    <!-- <Child v-bind:name="userName" /> -->
+    <Child v-bind:users="users"/>
   </div>
 </template>
 
@@ -17,7 +18,14 @@ export default {
     Child
   },
   data(){
-    return { userName:"Komal Killedar"}
+   // return { userName:"Komal Killedar"}
+   return{
+     users:[
+       {name:"Komal", email:"komal@gmail.com"},
+       {name:"Dimple", email:"dimple@gmail.com"},
+       {name:"Hayat", email:"hayat@gmail.com"}
+     ]
+   }
   }
 }
 </script>
