@@ -24,7 +24,7 @@ export default {
 
   methods: {
     loginData() {
-      console.log('Login Data',this.loginForm);
+      console.log('Login Data',this.loginForm.username,this.loginForm.password);
     },
   },
 }
