@@ -6,7 +6,8 @@
     <!-- <Child v-bind:users="users"/> -->
     <!-- <h1>{{title}}</h1>
     <ChildToParent v-on:changeTitle="updateTitle($event)"/> -->
-    <SignUp />
+    <!-- <SignUp /> -->
+    <Login />
   </div>
 </template>
 
@@ -14,15 +15,16 @@
 // import HelloWorld from './components/HelloWorld.vue'
 //import Child from './components/Child';
 //import ChildToParent from './components/ChildToParent';
-import SignUp from "./components/SignUp";
-
+// import SignUp from "./components/SignUp";
+import Login from "./components/Login";
 export default {
   name: 'App',
   components: {
     // HelloWorld
     // Child
     // ChildToParent
-        SignUp
+    // SignUp
+       Login
   },
   // data(){
   //   return {title:"Props Tutorial"}
