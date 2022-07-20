@@ -10,7 +10,7 @@
         name:'ChildToParent',
         methods:{
             updateTitle(){
-                this.$emit('changeTitle','Parent UPdated')
+                this.$emit('changeTitle','Parent Updated')
             }
         }
     }

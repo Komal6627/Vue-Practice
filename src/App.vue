@@ -4,21 +4,25 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Child v-bind:name="userName" /> -->
     <!-- <Child v-bind:users="users"/> -->
-    <ChildToParent v-on:changeTitle="updateTitle"/>
+    <!-- <h1>{{title}}</h1>
+    <ChildToParent v-on:changeTitle="updateTitle($event)"/> -->
+    <SignUp />
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 //import Child from './components/Child';
-import ChildToParent from './components/ChildToParent';
+//import ChildToParent from './components/ChildToParent';
+import SignUp from "./components/SignUp";
 
 export default {
   name: 'App',
   components: {
     // HelloWorld
     // Child
-    ChildToParent
+    // ChildToParent
+        SignUp
   },
   // data(){
   //   return {title:"Props Tutorial"}
@@ -32,7 +36,15 @@ export default {
   //      {name:"Hayat", email:"hayat@gmail.com"}
   //    ]
   //  }
-  }
+  //}
+  // data(){
+  //   return {title:"Props Tutorial"}
+  // },
+  // methods:{
+  //   updateTitle(title){
+  //     this.title = title
+  //   }
+  // }
 }
 </script>
 
