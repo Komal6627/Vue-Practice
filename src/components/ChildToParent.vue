@@ -10,7 +10,7 @@
         name:'ChildToParent',
         methods:{
             updateTitle(){
-                document.write("Hello this is new page");
+                this.$emit('changeTitle','Parent UPdated')
             }
         }
     }

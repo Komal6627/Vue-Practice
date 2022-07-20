@@ -4,7 +4,7 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Child v-bind:name="userName" /> -->
     <!-- <Child v-bind:users="users"/> -->
-    <ChildToParent/>
+    <ChildToParent v-on:changeTitle="updateTitle"/>
   </div>
 </template>
 
@@ -20,15 +20,18 @@ export default {
     // Child
     ChildToParent
   },
-  data(){
-   // return { userName:"Komal Killedar"}
-   return{
-     users:[
-       {name:"Komal", email:"komal@gmail.com"},
-       {name:"Dimple", email:"dimple@gmail.com"},
-       {name:"Hayat", email:"hayat@gmail.com"}
-     ]
-   }
+  // data(){
+  //   return {title:"Props Tutorial"}
+  // }
+  // data(){
+  //  // return { userName:"Komal Killedar"}
+  //  return{
+  //    users:[
+  //      {name:"Komal", email:"komal@gmail.com"},
+  //      {name:"Dimple", email:"dimple@gmail.com"},
+  //      {name:"Hayat", email:"hayat@gmail.com"}
+  //    ]
+  //  }
   }
 }
 </script>
