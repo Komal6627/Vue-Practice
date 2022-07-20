@@ -3,19 +3,22 @@
     <!-- <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Child v-bind:name="userName" /> -->
-    <Child v-bind:users="users"/>
+    <!-- <Child v-bind:users="users"/> -->
+    <ChildToParent/>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Child from './components/Child';
+//import Child from './components/Child';
+import ChildToParent from './components/ChildToParent';
 
 export default {
   name: 'App',
   components: {
     // HelloWorld
-    Child
+    // Child
+    ChildToParent
   },
   data(){
    // return { userName:"Komal Killedar"}
