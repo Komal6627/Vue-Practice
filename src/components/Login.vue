@@ -1,24 +1,31 @@
 <template>
   <div>
     <h1>Form</h1>
-    <input type="text" name="username" placeholder="Enter the User name" />
+    <input type="text" v-model="loginForm.username" name="username" placeholder="Enter the User name" />
     <br /><br />
-    <input type="password" name="password" placeholder="Enter the Password"/>
+    <input type="password" v-model="loginForm.password" name="password" placeholder="Enter the Password" />
     <br /><br />
-    <button v-on:click="loginData">Login</button>
+    <button  v-on:click='loginData'>Login</button>
   </div>
 </template>
 
 <script>
-export default{
+export default {
   name: 'Login',
- 
-  methods:{
-    loginData(){
-      console.log("Lofin Data")
+
+   data()
+   {
+    return {loginForm:{
+        username:null,
+        password:null
+      }
     }
-  }
+  },
+
+  methods: {
+    loginData() {
+      console.log('Login Data',this.loginForm);
+    },
+  },
 }
-    
-   
 </script>
