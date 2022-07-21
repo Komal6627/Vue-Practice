@@ -9,6 +9,7 @@
     <!-- <SignUp /> -->
     <!-- <Login /> -->
     <!-- <FormVal/> -->
+    <h1>{{name}}</h1>
     <Filter />
   </div>
 </template>
@@ -21,6 +22,7 @@
 //import Login from "./components/Login";
 // import FormVal  from "./components/FormVal";
 import Filter from "./components/Filter";
+
 export default {
   name: 'App',
   components: {
@@ -53,6 +55,11 @@ export default {
   //     this.title = title
   //   }
   // }
+    data(){
+      return {
+        name: "Komal"
+      }
+    }
 }
 </script>
 
