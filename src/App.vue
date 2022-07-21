@@ -8,7 +8,8 @@
     <ChildToParent v-on:changeTitle="updateTitle($event)"/> -->
     <!-- <SignUp /> -->
     <!-- <Login /> -->
-    <FormVal/>
+    <!-- <FormVal/> -->
+    <Filter />
   </div>
 </template>
 
@@ -18,7 +19,8 @@
 //import ChildToParent from './components/ChildToParent';
 // import SignUp from "./components/SignUp";
 //import Login from "./components/Login";
-import FormVal  from "./components/FormVal";
+// import FormVal  from "./components/FormVal";
+import Filter from "./components/Filter";
 export default {
   name: 'App',
   components: {
@@ -27,7 +29,8 @@ export default {
     // ChildToParent
     // SignUp
     //  Login
-    FormVal 
+    // FormVal 
+    Filter
   },
   // data(){
   //   return {title:"Props Tutorial"}
