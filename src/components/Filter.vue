@@ -1,13 +1,25 @@
+<!-- Local filter in VueJS -->
+<!-- Template -->
 <template>
   <div>
-    <h1>Filter</h1>
-    <h1>{{name | Ucase}}</h1>
+    
+    <!-- Applying Uppercase filter -->
+    <h1>{{ name| uppercase }}</h1>
   </div>
 </template>
-
+  
+<!-- Filter defined locally -->
 <script>
 export default {
-  name: 'Filter',
-}
-
+  data: function() {
+    return {
+      name: "geeksforgeeks"
+    };
+  },
+  filters: {
+    uppercase: function(value) {
+      return value.toUpperCase();
+    }
+  }
+};
 </script>

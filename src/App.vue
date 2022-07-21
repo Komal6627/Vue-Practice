@@ -9,8 +9,9 @@
     <!-- <SignUp /> -->
     <!-- <Login /> -->
     <!-- <FormVal/> -->
-    <h1>{{name}}</h1>
-    <Filter />
+    
+    <!-- <Filter /> -->
+    <CreBefHook/>
   </div>
 </template>
 
@@ -21,8 +22,8 @@
 // import SignUp from "./components/SignUp";
 //import Login from "./components/Login";
 // import FormVal  from "./components/FormVal";
-import Filter from "./components/Filter";
-
+// import Filter from "./components/Filter";
+   import CreBefHook from "./components/CreBefHook"
 export default {
   name: 'App',
   components: {
@@ -32,7 +33,8 @@ export default {
     // SignUp
     //  Login
     // FormVal 
-    Filter
+    // Filter
+    CreBefHook
   },
   // data(){
   //   return {title:"Props Tutorial"}
@@ -55,11 +57,7 @@ export default {
   //     this.title = title
   //   }
   // }
-    data(){
-      return {
-        name: "Komal"
-      }
-    }
+ 
 }
 </script>
 
