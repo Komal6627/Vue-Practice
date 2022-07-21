@@ -7,9 +7,17 @@
     export default {
       name:"CreBefHook",
       data(){
-        return{
-          name:"Komal"
+            return{
+                name:"Komal"
+            }
+        },
+        created(){
+           alert("Created");
+        },
+        beforeCreate(){
+            alert("Before Created");
         }
-      }
     }
+
+
 </script> 
