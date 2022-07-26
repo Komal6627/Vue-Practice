@@ -11,7 +11,8 @@
     <!-- <FormVal/> -->
     
     <!-- <Filter /> -->
-    <CreBefHook/>
+    <!-- <CreBefHook/> -->
+    <BtnClick/>
   </div>
 </template>
 
@@ -23,7 +24,8 @@
 //import Login from "./components/Login";
 // import FormVal  from "./components/FormVal";
 // import Filter from "./components/Filter";
-   import CreBefHook from "./components/CreBefHook"
+ //  import CreBefHook from "./components/CreBefHook"
+ import BtnClick from "./components/BtnClick"
 export default {
   name: 'App',
   components: {
@@ -34,7 +36,8 @@ export default {
     //  Login
     // FormVal 
     // Filter
-    CreBefHook
+    // CreBefHook
+    BtnClick
   },
   // data(){
   //   return {title:"Props Tutorial"}
